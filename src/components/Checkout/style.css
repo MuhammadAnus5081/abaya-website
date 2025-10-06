@@ -1,4 +1,4 @@
-.checkout-page {
+/* .checkout-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,4 +47,124 @@
   button:hover {
     background-color: #45a049;
   }
-  
+   */
+
+   .checkout-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.checkout-page h1 {
+  margin-bottom: 15px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 15px;
+  }
+
+  .checkout-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .checkout-form {
+    padding: 15px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 10px;
+  }
+
+  .checkout-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .checkout-form {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

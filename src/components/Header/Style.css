@@ -357,3 +357,24 @@ h2 {
   font-size: 16px;
   margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 60px;
+  }
+}

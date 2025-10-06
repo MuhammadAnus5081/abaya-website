@@ -1,80 +1,150 @@
-
-      
 /* ContactUs.css */
 
 .contact-us-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-    
-  }
-  .contact-us-container h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800px;
-  }
-  
-  .contact-us-container p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-details {
-    text-align: left;
-    margin-bottom: 30px;
-  }
-  
-  .contact-details p {
-    margin-bottom: 10px;
-  }
-  
-  .contact-details a {
-    color: #337ab7;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: left;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  .recaptcha {
-    font-size: 14px;
-    color: #888;
-  }
-  
-  button[type="submit"] {
-    background-color: #b41414;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #23527c;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact-us-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+}
+
+.contact-us-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.contact-details {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+}
+
+.contact-details a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.recaptcha {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #b41414;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .contact-us-container {
+    padding: 25px 20px;
+    max-width: 100%;
   }
 
+  .contact-us-container h1 {
+    font-size: 24px;
+  }
+
+  .contact-us-container p {
+    font-size: 15px;
+  }
+
+  .form-group label {
+    font-size: 15px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-container {
+    padding: 15px 10px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 20px;
+  }
+
+  .contact-us-container p {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

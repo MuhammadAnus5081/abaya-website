@@ -60,6 +60,12 @@ input:focus + .input-highlight {
   cursor: pointer;
 }
 
+.s-button:hover {
+  background-color: #006666;
+  color: #fff;
+}
+
+
 .signup-link {
   text-align: center;
   margin-top: 20px;
@@ -110,7 +116,8 @@ input:focus + .input-highlight {
 }
 
 .input {
-  width: 390px;
+   width: 100%;
+  max-width: 390px;
   padding: 12px;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -159,4 +166,22 @@ input:focus + .input-highlight {
 
 .signin a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .login-form,
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+
+  .submit {
+    margin-left: 0;
+    width: 100%;
+  }
 }
